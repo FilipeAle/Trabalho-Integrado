@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color:#F0F0F1;
+    overflow: hidden;
 
 }
 .nav-bar{
