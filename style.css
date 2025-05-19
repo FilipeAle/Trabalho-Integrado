@@ -6,7 +6,7 @@ body{
 }
 .nav-bar{
     margin: 0;
-    background-color: #00CD92;
+    background-image:linear-gradient(to right, #115c47,#749F82);
     position: fixed;
     width: 100%;
     height: 125px;
