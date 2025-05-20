@@ -39,6 +39,7 @@
     <h1>Encontre o ponto de coleta mais próximo de você!</h1>
     <hr class="line">
     <br><br>
+    <section>
     <div class="texto-imagem">
       <div><h1 class="topico">Lorem ipsum  <br> dolor.</h1>
       <p>
@@ -52,30 +53,64 @@ eleifend ut libero. Vivamus blandit neque in viverra egestas. Nullam tristique e
 a vulputate erat. Aenean quis fringilla ipsum. Curabitur venenatis mauris mi, in suscipit elit dictum sit amet.  <br></div>
 </p>
       <figure>
+        <div>
         <img src="./img/sdf.png" alt="" width="800" height="600">
+        </div>
         <figcaption><div class="legenda"><i>Lorem ipsum dolor sit amet</i></div></figcaption>
       </figure>
     </div>
+    </section>
+    <br><br>
+    <hr class="line">
+    <br><br><br><br><br>
+    <section class="usuarios">
+      <div>
+        <h2 style="background-color: #ff9900; color: white;">Lorem ipsum dolor <br> sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. In sapien odio, aliquet at elementum vel, volutpat eu lorem. Suspendisse vitae molestie erat, id cursus eros. 
+Nullam ultrices rhoncus sapien sit amet scelerisque. Morbi porttitor risus non sodales hendrerit. Fusce ultricies odio nisl. Aenean vitae vestibulum lectus.
+Donec sed massa at massa finibus blandit. Mauris elementum erat euismod aliquam vulputate.</p>
+<button class="botao-user">
+<h3>Lorem ipsum</h3>
+</button>
+
+      </div>
+      <hr style="background-color:#4fb96a;" width="10px">
+      <div>
+        <h2 style="background-color: #ff9900 ; color: white;">Lorem ipsum dolor <br> sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. In sapien odio, aliquet at elementum vel, volutpat eu lorem. Suspendisse vitae molestie erat, id cursus eros. 
+Nullam ultrices rhoncus sapien sit amet scelerisque. Morbi porttitor risus non sodales hendrerit. Fusce ultricies odio nisl. Aenean vitae vestibulum lectus.
+Donec sed massa at massa finibus blandit. Mauris elementum erat euismod aliquam vulputate.</p>
+<button class="botao-user">
+  <h3>Lorem ipsum</h3>
+
+</button>
+      </div>
+    </section>
+ <div id="backToTopContainer" title="Voltar ao topo">
+  <img src="./img/output_ot1NcD.gif" alt="seta para cima" width="100px">
+  <h3>Voltar ao topo</h3>
+</div>
+</button>
 </main>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
 <div class="footer">
   <div class="footer-bg"></div> 
-  
   <div class="footer-content"> 
     <div class="logo">
       <img src="./img/logo2.png" width="100px" height="100px" alt="">
     </div>
     <div>
-      <h3>Nos mande <br>um e-mail!</h3>
+      <h4 class="receba" >Receba novidades <br> pelo e-mail</h4>
       <form action="">
-        <input type="text">
+        <input class="email" type="text" placeholder="Seu E-mail">
       </form>
-
     </div>
     <div>
       <h3>Contato</h3>
-      <hr>
+      <hr style="background-color: black; color: black;">
     </div>
   </div>
 </div>
@@ -84,5 +119,20 @@ a vulputate erat. Aenean quis fringilla ipsum. Curabitur venenatis mauris mi, in
 
 </div>
 </footer>
+<script>
+  const backToTopContainer = document.getElementById("backToTopContainer");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopContainer.style.display = "block";
+    } else {
+      backToTopContainer.style.display = "none";
+    }
+  });
+
+  backToTopContainer.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>
