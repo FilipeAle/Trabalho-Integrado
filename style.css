@@ -1,7 +1,7 @@
 body{
     height: 100%;
     margin: 0;
-    background-color:#f8f0d9;
+    background-color:#fdf8e7;
 
 }
 #navi{
@@ -34,7 +34,7 @@ body{
 .area-usuario{
      padding-right: 20px;
     margin-left: auto;
-    color: #FFFFEC;
+    color: #ffffff;
     font-size: 25px;
     display: flex;
     position: relative;
@@ -108,7 +108,8 @@ header{
     height: 100px;
     z-index: 2;
     border-radius: 60px;
-    border: none;
+    border: 1px solid rgb(136, 134, 134);
+
     cursor: pointer;
 
 }
@@ -143,7 +144,7 @@ padding: 40px;
 }
 
 .footer-content {
-  gap: 30px;
+  gap: 60px;
   position: relative;
   z-index: 2;
   display: flex;
@@ -169,11 +170,11 @@ height: 25px;
     text-align: center;
     z-index: 11;
     position: relative;
-    bottom: 0;
     background-color: #115c47;
     width: 100%;
     height: 40px;
     font-size: 20px;
+    justify-content: center;
 }
 .legenda{
     color: #ff9900;
@@ -182,5 +183,51 @@ height: 25px;
     opacity: 1.0;
 }
 .topico{
-    color: #ff9900;
+    color: #000000;
+}
+.email{
+    width: 100%;
+    padding: 10px 40px 10px 0;
+    margin-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #115c47 ;
+    border-radius: 0;
+    font-size: 17px;
+    letter-spacing: .3px;
+    color: white
+}
+.receba{
+    font-size: 24px; 
+    margin: 3px;
+    color: #231f20
+}
+.usuarios{
+    position: relative;
+    display: flex;
+    gap: 100px;
+}
+.botao-user{
+    width: 140px;
+    height: 50px;
+    background-color:#00CD92;
+    color: white;
+
+}
+#backToTopContainer {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 99;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#backToTopContainer h3 {
+  margin: 5px 0 0 0;
+  font-size: 17px;
+  color: #333;
+  font-weight: normal;
 }
