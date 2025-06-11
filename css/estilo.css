@@ -1,0 +1,265 @@
+ @font-face {
+     font-family: minha_fonte;
+     src: url('./../fonts/roboto/Roboto-Regular.ttf');
+
+ }
+
+ body {
+     font-family: minha_fonte;
+     margin: 0;
+     padding: 0;
+ }
+
+ header {
+     background: linear-gradient(90deg, #0e4434, #51745f);
+
+ }
+
+ nav {
+     display: flex;
+     align-items: flex-end;
+ }
+
+ nav a {
+     color: #ffffff;
+     text-decoration: none;
+ }
+
+ .item_1 {
+     flex-grow: 1;
+
+ }
+
+ .item_2 {
+     flex-grow: 6;
+     margin-bottom: 20px;
+ }
+
+ .item_3 {
+     flex-grow: 5;
+ }
+
+ .flex {
+     display: flex;
+ }
+
+ .coluna {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+
+ }
+
+ .flex div {
+     margin: 10px 10px 0px 10px;
+
+ }
+
+ .login {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     margin: 20px;
+ }
+
+ .linha {
+     display: flex;
+     align-items: end;
+ }
+
+ .content {
+     display: flex;
+ }
+
+ main {
+     flex: 1;
+ }
+
+ aside {
+     margin: 20px;
+     height: 60%;
+ }
+
+ .title_point {
+     background-color: #94ADA3;
+     width: 34%;
+
+     text-align: right;
+     margin: 10px 0 10px 0;
+     height: 100px;
+ }
+
+ .title_point h1 {
+     font-size: 30px;
+     margin: 0;
+     padding: 30px 0 0 3px;
+ }
+
+ .img_home_princiapal {
+     display: flex;
+     justify-content: center;
+ }
+
+ .text_home {
+     display: flex;
+     justify-content: center;
+     position: relative;
+     width: 50%;
+     margin: 100px auto;
+     padding: 10px;
+ }
+
+ .borda_superior_esquerda,
+ .borda_inferior_direita {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+ }
+
+ .borda_superior_esquerda {
+     top: 0;
+     left: 0;
+ }
+
+ .borda_inferior_direita {
+     bottom: 0;
+     right: 0;
+     transform: rotate(180deg);
+ }
+
+ .linha_horizontal {
+     height: 2px;
+     width: 150px;
+     background: linear-gradient(to right, #115C47, #115C47, #f8f8f8);
+     margin: -20px;
+
+ }
+
+ .linha_vertical {
+     width: 2px;
+     height: 150px;
+     background: linear-gradient(to bottom, #115C47, #115C47, #f8f8f8);
+
+ }
+
+ .link_home_meio {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .link_home_meio div {
+     margin: 50px;
+     width: 150px;
+     height: 150px;
+     background-color: #174D3C;
+     border-radius: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .link_home_meio div a {
+     text-decoration: none;
+     color: #ffffff;
+
+ }
+
+ .footer_maim {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+
+ .footer_maim_border_top {
+     background: linear-gradient(to left, #174D3C, #f8f8f8);
+     width: 100%;
+     height: 10px;
+ }
+
+ .footer_maim_border_bottom {
+     background: linear-gradient(to right, #174D3C, #f8f8f8);
+     width: 100%;
+     height: 10px;
+ }
+
+ footer {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     margin-top: 20px;
+     background-color: rgba(4, 68, 21, 0.89);
+ }
+
+ .item_footer_logo {
+     grid-column: 1 /2;
+ }
+
+ .item_footer_lins {
+     grid-column: 2/ 11;
+     display: flex;
+     grid-template-columns: auto auto auto auto;
+     place-items: center;
+     color: #f8f8f8;
+ }
+
+ .item_footer_icones {
+     grid-column: 11/ 12;
+  display: grid;
+  place-items: end;
+ }
+
+ .footer_coluna {
+     display: flex;
+     flex-direction: column;
+     margin-left: 0;
+     border-left: 2px solid #f8f8f8;
+     padding: 10px;
+ }
+
+ .footer_coluna a {
+     text-decoration: none;
+     color: #f8f8f8;
+ }
+
+ .item_footer_icones_2{
+    color: #f8f8f8;
+     flex-direction: column;
+     text-align: center;
+ }
+  .item_footer_icones_2 div img{
+    margin: 10px;
+    align-self:baseline;
+ }
+.box_text_quemsomos{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, 0.171);
+    display: flex;
+    font-size: 14px;   
+    margin-left: 3px; 
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.alinhamento_img_quemsomos div img {
+   width: 150px;
+   height: 150px
+}
+.box_text_quemsomos_direita{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, 0.171);
+    display: flex;
+    font-size: 14px;
+    flex-direction: row-reverse;
+}
+.box_text_quemsomos_direita div {
+    text-align: right;
+    margin-right: 3px;
+}
+
+
+ 
