@@ -1,6 +1,6 @@
  @font-face {
      font-family: minha_fonte;
-     src: url('./../fonts/roboto/Roboto-Regular.ttf');
+     src: url('./fontes/Roboto-Regular.ttf');
 
  }
 
@@ -311,7 +311,7 @@ justify-content: space-between;
 }
 .alinhamento_img_quemsomos div img {
    width: 150px;
-   height: 150px
+   height: 150px;
 }
 .box_text_quemsomos_direita{
     width: 50%;
@@ -320,10 +320,12 @@ justify-content: space-between;
     display: flex;
     font-size: 14px;
     flex-direction: row-reverse;
+    font-family: minha_fonte;
 }
 .box_text_quemsomos_direita div {
     text-align: right;
     margin-right: 3px;
+    font-family: minha_fonte;
 }
 #backToTopContainer {
   display: none;
@@ -342,6 +344,174 @@ justify-content: space-between;
   color: #333;
   font-weight: normal;
 }
+/*Page serviço*/
+.imgpg{
+  width:500px;
+  height:300px;
+}
+.titulo_serviço{
+text-align: center;
+font-size: larger;
+font-family: minha_fonte;
 
+}
+.titulo{
+    text-align: left;
+    padding-left: 90px;
+ font-size: xx-large;
+ font-family: minha_fonte;
+
+}
+
+ .ju_topo_serviço {
+  
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-size: xx-large;
+
+ }
+
+.topoimg1{
+      padding-left: 50px;
+   margin: 100px;
+   
+
+}
+#topoimg2{
+    padding-left: 50px;
+   margin: 100px;
+   
+  
+}
+.txttopo{
+    text-align: center;
+    font-size: larger;
+    font-family: minha_fonte;
+}
+.meio_geral{
+    display: flex;
+    font-size: larger;
+}
+.meio_serviço_txt{
+    text-align: left;
+   padding-left: 50px;
+}
+.meio_serviço_img1{
+        padding: 50px;
+     text-align: center;
+border-width: 8px;
+border-style: solid;
+border-color: #065F1F;
+margin: 100px;
+text-decoration: none;
+color: black;
+}
+.meio_serviço_img2{
+     padding: 50px;
+     text-align: center;
+border-width: 9px;
+border-style: solid;
+border-color: #065F1F;
+margin: 100px;
+text-decoration: none;
+color: black;
+}
+.meio_serviço_img3{
+    
+padding: 50px;
+text-align: center;
+border-width: 8px;
+border-style: solid;
+border-color: #065F1F;
+margin: 100px;
+}
+.final_serviço_txt{
+    text-align: left;
+   padding-left: 50px;
+   font-size: larger;
+}
+.final_serviço_img{
+    margin: 25px;
+     text-align: center;
+}
+.final_serviço_paf{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+.meio_serviço_img2 a{
+    text-decoration: none;
+color: black;
+}
+.meio_serviço_img1 a{
+    text-decoration: none;
+color: black;
+}
+.meio_serviço_img3 a{
+    text-decoration: none;
+color: black;
+}
+.meio_serviço_img1:hover{background-color: #9BCA30;}
+.meio_serviço_img2:hover{background-color: #9BCA30;}
+.meio_serviço_img3:hover{background-color: #9BCA30;}
+
+/*Paginas de Empressa Parceiras*/
+
+.titulo_se_txt{
+    text-align: center;
+    font-size: xx-large;
+    font-family: minha_fonte;
+}
+.topo_se{
+    display: flex;
+}
+.imgse{padding: 60px;
+    }
+.txt_se{
+    padding: 60px;
+font-size: x-large;
+text-align: center;
+font-family: minha_fonte;
+}
+.titulo2_se{
+    text-align: center;
+    font-size: xx-large;
+    font-family: minha_fonte;
+}
+.final_se{
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.ima1_se{
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    margin: 75px;
+   text-align: center;
+   font-size: x-large;
+   border-radius: 5%;
+   box-shadow: 2px 3px 3px black;
+   font-family: minha_fonte;
+   
+}
+.ima1_se button{
+    background: linear-gradient(#AAC2CE,#D3E7F2);
+    border-radius: 10px 10px 10px;
+    margin: none;
+    width: 200px;
+    height:40px ;
+     padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    font-family: minha_fonte;
+}
  
 
