@@ -11,64 +11,129 @@
  }
 
  header {
-     background: linear-gradient(90deg, #0e4434, #51745f);
-
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #0e4434;
+    padding-left: 130px;
+    height: 137px;
  }
 
- nav {
-     display: flex;
-     align-items: flex-end;
- }
+ 
 
  nav a {
      color: #ffffff;
      text-decoration: none;
  }
 
- .item_1 {
-     flex-grow: 1;
-
+ 
+ .hoverzin{
+background: transparent;
+  border: none;
+  height: 135px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
  }
+ 
+ .hoverzin:hover{
+    border-bottom: 3px solid white;
 
- .item_2 {
-     flex-grow: 6;
-     margin-bottom: 20px;
  }
 
  .item_3 {
      flex-grow: 5;
  }
 
- .flex {
-     display: flex;
- }
-
  .coluna {
      display: flex;
      flex-direction: column;
      text-align: center;
+     opacity: 70%;
+     font-size: 15px;
+     gap: 5px;
 
  }
 
- .flex div {
-     margin: 10px 10px 0px 10px;
-
+ .coluna:hover{
+    opacity: 100%;
  }
 
- .login {
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     margin: 20px;
- }
+ nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
- .linha {
-     display: flex;
-     align-items: end;
- }
+.menuzinho {
+    border: none;
+    margin: 0;
+width: 86%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.menuzin{
+    gap: 70px;
+    display: flex;
+}
+.item_1 {
+  display: flex;
+  align-items: center;
+}
+
+.item_2 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.login .linha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+.loginnn{
+    font-family: minha_fonte;
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+  color: white; 
+  text-decoration: none; 
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  border-top: 3px solid #09B42C;
+  border-bottom: 3px solid #09B42C;
+  height: 60px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
 
  .content {
-     display: flex;
+    display: flex;
+    margin-top: 149px ;
+
  }
 
  main {
@@ -260,6 +325,23 @@
     text-align: right;
     margin-right: 3px;
 }
+#backToTopContainer {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 99;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
 
+#backToTopContainer h3 {
+  margin: 5px 0 0 0;
+  font-size: 17px;
+  color: #333;
+  font-weight: normal;
+}
 
  
+
