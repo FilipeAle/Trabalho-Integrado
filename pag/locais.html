@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locais de Coleta</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: f2f2f2;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 200px;
+}
+
+
+footer {
+  margin-top: auto;
+}
+
+    .pagina-container {
+      max-width: 1600px;
+      min-width: 1200px;
+      margin: 160px auto 50px auto;
+      padding: 0 20px;
+    }
+
+    .cabecalho-local {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .cabecalho-local h2 {
+      margin: 0;
+    }
+
+    .input-local {
+  padding: 10px 15px;
+  padding-right: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+.input-local:focus {
+  border-color: #0e4434;
+}
+
+
+    .conteudo-local {
+      display: flex;
+      gap: 20px;
+      flex-grow: 1;
+  min-height: 400px
+    }
+
+    .lista-locais {
+      background-color: #d6fbd6;
+      border-radius: 15px;
+      padding: 20px;
+      flex: 1;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+      height: auto;
+      min-height: 400px;
+    }
+
+    .item-local {
+      background-color: #d9d9d9;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .item-local img {
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+    }
+
+    .mapa-container {
+      flex: 1;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
+      height: auto;
+      min-height: 400px;
+    }
+
+    .botao-voltar {
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .botao-voltar img {
+      width: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .conteudo-local {
+        flex-direction: column;
+      }
+
+      .cabecalho-local {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .input-local {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header original -->
+  <header>
+    <nav>
+      <div class="menuzinho">
+        <div class="menuzin">
+          <div class="item_1">
+            <a href="../index.html">
+              <img src="../img/LOGO ATUALIZADA.png" alt="logo da empresa RRRpoint" width="220px" height="135px">
+            </a>
+          </div>
+          <div class="item_2">
+            <div class="coluna">
+              <button class="hoverzin">
+                <a href="../index.html"><img src="../img/home (1).png" alt="" width="46px" height="41"></a>
+                <a href="../index.html">HOME</a>
+              </button>
+            </div>
+            <div class="coluna">
+              <button class="hoverzin">
+                <a href="../pag/quemsomos.html"><img src="../img/Question_mark_white.png" alt="" width="40px"></a>
+                <a href="">QUEM SOMOS</a>
+              </button>
+            </div>
+            <div class="coluna">
+              <button class="hoverzin">
+                <a href="#"><img src="../img/666-6662119_white-point-png.png" alt="" width="28px"></a>
+                <a href="#">LOCAIS</a>
+              </button>
+            </div>
+            <div class="coluna">
+              <button class="hoverzin">
+                <a href="#"><img src="../img/menu-icon-png-3-lines-5.jpg" alt="" width="35px"></a>
+                <a href="#">SERVIÇOS</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="login">
+          <div>
+            <button class="login-button">
+              <a href="#" class="loginnn">
+                <img src="../img/User.png" alt="">
+                <span>Entrar</span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Botão de voltar -->
+  <a href="../index.html" class="botao-voltar">
+    <img src="../img/locais/seta_esquerda.png" alt="Voltar">
+  </a>
+
+  <!-- Conteúdo -->
+  <main class="pagina-container">
+    <div class="cabecalho-local" style="flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+  <h2 style="margin-bottom: 0;">Locais de Coleta</h2>
+  <div style="position: relative; width: 100%; max-width: 350px;">
+    <input type="text" class="input-local" placeholder="Digite sua localização" style="width: 100%; padding-right: 40px;">
+    <img src="../img/locais/lupa-arredondada.png" alt="Buscar" style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); width: 20px; height: 20px; opacity: 0.6;">
+  </div>
+</div>
+
+
+    <div class="conteudo-local">
+      <!-- Lista de locais -->
+      <div class="lista-locais">
+        <div class="item-local">
+          <div>
+            <strong>ASSCAMARG</strong><br>
+            R. Ruy Cortés, 01 - Ilhas Verdes, Guarapari - ES, 29223-050<br>
+            <strong>Segunda a Sexta</strong>, das 08:00 às 16:00<br>
+            <strong>Sábado</strong>, das 08:00 às 11:00
+          </div>
+          <img src="../img/locais/assc.jpg" alt="Imagem do local">
+        </div>
+
+        <div class="item-local">
+          <div>
+            <strong>Ponto de coleta seletiva</strong><br>
+            Itapuã, Vila Velha - ES, 29101-012<br>
+            <strong>Segunda a Sexta</strong>, das 08:00 às 16:00<br>
+            <strong>Sábado</strong>, das 08:00 às 11:00
+          </div>
+          <img src="../img/locais/pontoleta.jpg" alt="Imagem do local">
+        </div>
+
+        <div class="item-local">
+          <div>
+            <strong>Coleta Waste Management</strong><br>
+            R. Ruy Cortés, 01 - Ilhas Verdes, Guarapari - ES, 29223-050<br>
+            <strong>Segunda a Sexta</strong>, das 08:00 às 16:00<br>
+            <strong>Sábado</strong>, das 08:00 às 11:00
+          </div>
+          <img src="../img/locais/colera.jpg" alt="Imagem do local">
+        </div>
+
+        <div class="item-local">
+          <div>
+            <strong>Ecoponto</strong><br>
+            Ibes, Vila Velha - ES, 29103<br>
+            <strong>Segunda a Sexta</strong>, das 08:00 às 16:00<br>
+            <strong>Sábado</strong>, das 08:00 às 11:00
+          </div>
+          <img src="../img/locais/ecopinto.jpg" alt="Imagem do local">
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="mapa-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4302871029885!2d-46.64810452467043!3d-23.588060778781716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bcdbe13a8b%3A0xf9a2f406b8a4b761!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1718162040287!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="item_footer_logo">
+      <img src="../img/logo_2.png" alt="logo da empresa RRRpoint">
+    </div>
+    <div class="item_footer_lins">
+      <div><samp>Utilidades</samp></div>
+      <div class="footer_coluna">
+        <a href="#">Home</a>
+        <a href="#">Quem somos</a>
+        <a href="#">Locais</a>
+        <a href="#">Serviços</a>
+      </div>
+    </div>
+    <div class="item_footer_icones">
+      <div class="item_footer_icones_2">
+        <div>
+          <img src="../img/x.png" alt="X">
+          <img src="../img/insta.png" alt="Instagram">
+          <img src="../img/youtube.png" alt="YouTube">
+          <img src="../img/LinkedIn.png" alt="LinkedIn">
+        </div>
+        <div>
+          <samp>&copy;2025 RRRPont Todos os direitos reservados</samp>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
