@@ -12,7 +12,7 @@
 
  header {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     background: #0e4434;
     padding-left: 130px;
