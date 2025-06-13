@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/favicon 32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(#3A6652, #2B473B);
+            color: #f8f8f8;
+            
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+        }
+
+        .login {
+            display: grid;
+            place-content: center;
+        }
+
+        .login button {
+            border-radius: 50px;
+        }
+
+        .formes {
+            text-align: left;
+        }
+
+        .login input {
+            border-radius: 50px;
+            width: 200px;
+            height: 30px;
+        }
+
+        .btn_entrar {
+            background: linear-gradient(to right, #E6C476, #B18218);
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+       
+
+        button {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="login">
+            <article>
+                <div>
+                    <img src="./img/logo2.png" alt="">
+                </div>
+                <div class="formes">
+                    <h1>Entrar na sua conta</h1>
+                    <form action="" method="post">
+                        <label for="email">e-mail</label><br>
+                        <input type="email" placeholder="Digite seu e-mail aqui"><br>
+                        <label for="senha">Senha</label><br>
+                        <input type="password" placeholder="Digite sua senha">
+                    </form>
+                </div>
+                <div>
+                    <a href="">esqueceu sua senha</a>
+                </div>
+                <div class="btn">
+                    <div><button> Criar conta</button></div>
+                    <div><button type="submit" class="btn_entrar">Entrar</button></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="item_footer_logo">
+            <img src="./img/logo_2.png" alt="logo da empresa RRRpoint">
+        </div>
+        <div class="item_footer_lins">
+            <div>
+                <samp>Utilidades</samp>
+            </div>
+            <div class="footer_coluna">
+                <a href="">Home</a>
+                <a href="./pag/quemsomos.html">Quem somos</a>
+                <a href="./pag/locais.html">Locais</a>
+                <a href="./pag/serviços.html">Serviços</a>
+            </div>
+        </div>
+        <div class="item_footer_icones">
+            <div class="item_footer_icones_2">
+                <div>
+                    <img src="./img/x.png" alt="Logo do X, antigo Twitter">
+                    <img src="./img/insta.png" alt="Logo do Instagram">
+                    <img src="./img/youtube.png" alt="Logo do YouTube">
+                    <img src="./img/LinkedIn.png" alt="Logo do LinkedIn">
+                </div>
+                <div>
+                    <samp>&copy;2025 RRRPont Todos os direitos reservados</samp>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
